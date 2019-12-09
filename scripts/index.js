@@ -29,13 +29,12 @@ function getMenuObjsOnClick(event) {
     jsMainContent.textContent = "";
     let name = event.target.textContent;
     let itemObjs = categoryToItemObjs(name);
+    if (onlyVegetarian === true) {
+        itemObjs = itemObjs.filter(filterVegetarian);
+    }
     // debugger;
     let itemCards = itemObjs.map(itemToCard);
     itemCards.map(appendCardToMainContent);
-}
-
-function itemObjFromName(name) {
-
 }
 
 function getName(obj) {
@@ -63,7 +62,7 @@ function itemToCard(itemObj) {
     img.src = itemObj.photo;
     div.appendChild(img);
     let price = document.createElement('h3');
-    price.textContent = itemObj.price;
+    price.textContent = `Costs: $${itemObj.price}`;
     div.appendChild(price);
     return div;
 }
@@ -75,3 +74,20 @@ function appendCardToMainContent(cardEl) {
 }
 // appendCardToMainContent(itemToCard(menu.breakfast[0]));
 
+const vegetarianButton = document.querySelector('.js-vegetarian');
+vegetarianButton.addEventListener("click", isVegetarian);
+let onlyVegetarian = false;
+
+function isVegetarian() {
+    if (onlyVegetarian === false) {
+        onlyVegetarian = true;
+        vegetarianButton.textContent = "Vegetarian!";
+    } else {
+        onlyVegetarian = false;
+        vegetarianButton.textContent = "Not Vegetarian!";
+    }
+}
+
+function filterVegetarian(itemObj) {
+    return itemObj.isVegetarian;
+}
