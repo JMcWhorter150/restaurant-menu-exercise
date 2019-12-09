@@ -59,6 +59,9 @@ function itemToCard(itemObj) {
     let name = document.createElement('h2');
     name.textContent = itemObj.name;
     div.appendChild(name);
+    let img = document.createElement('img');
+    img.src = itemObj.photo;
+    div.appendChild(img);
     let price = document.createElement('h3');
     price.textContent = itemObj.price;
     div.appendChild(price);
