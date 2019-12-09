@@ -7,7 +7,7 @@ const menu = {
             isVegan: false,
             description: "Two biscuits and some gravy!",
             price: 4,
-            photo: ""
+            photo: "images/jodie-morgan-PAa_MJztyUY-unsplash.jpg"
         },     
         {
             name: "Granola",
@@ -15,7 +15,7 @@ const menu = {
             isVegan: true,
             description: "Fruit, granola, and yogurt.",
             price: 3,
-            photo: ""
+            photo: "images/dan-counsell-efJu9SKIjLA-unsplash.jpg"
         },     
         {
             name: "Breakfast Tacos",
@@ -23,7 +23,7 @@ const menu = {
             isVegan: false,
             description: "Tacos. In your face!",
             price: 8,
-            photo: ""
+            photo: "images/tai-s-captures-JiRSy0GfqPA-unsplash.jpg"
         },     
         {
             name: "Pancakes",
@@ -31,7 +31,7 @@ const menu = {
             isVegan: false,
             description: "A stack of yum",
             price: 7,
-            photo: ""
+            photo: "images/elli-o-7hlOjB5VVb0-unsplash.jpg"
         },     
     ],
     lunch: [
@@ -41,7 +41,7 @@ const menu = {
             isVegan: false,
             description: "The taste of freedom",
             price: 9,
-            photo: ""
+            photo: "images/beef-blur-bread-bun-551991.jpg"
         },     
         {
             name: "Salad",
@@ -49,7 +49,7 @@ const menu = {
             isVegan: true,
             description: "The taste of vegetables",
             price: 7,
-            photo: ""
+            photo: "images/vegetable-salad-with-wheat-bread-on-the-side-1213710.jpg"
         },     
         {
             name: "BLT",
@@ -57,7 +57,7 @@ const menu = {
             isVegan: false,
             description: "It's like a salad, but it's a sandwich. And there's bacon.",
             price: 7,
-            photo: ""
+            photo: "images/eiliv-sonas-aceron-PlLvvTs-kxU-unsplash.jpg"
         },     
         {
             name: "Veggie Soup",
@@ -65,7 +65,7 @@ const menu = {
             isVegan: true,
             description: "Because it's cold outside",
             price: 0,
-            photo: ""
+            photo: "images/jeeray-tang-mrGYttsi4iU-unsplash.jpg"
         },     
     ],
     dinner: [
@@ -75,7 +75,7 @@ const menu = {
             isVegan: false,
             description: "So healthy!",
             price: 11,
-            photo: ""
+            photo: "images/davide-cantelli-jpkfc5_d-DI-unsplash.jpg"
         },     
         {
             name: "Steak",
@@ -83,7 +83,7 @@ const menu = {
             isVegan: false,
             description: "Because meat",
             price: 13,
-            photo: ""
+            photo: "images/eugene-Xk0jQPZseMk-unsplash.jpg"
         },     
         {
             name: "Veggie Kebabs",
@@ -91,7 +91,7 @@ const menu = {
             isVegan: true,
             description: "Food on sticks",
             price: 9,
-            photo: ""
+            photo: "images/ella-olsson-Pb9aFVR9-Bk-unsplash.jpg"
         },     
         {
             name: "Hummus Plate",
@@ -99,7 +99,7 @@ const menu = {
             isVegan: true,
             description: "It's like an appetizer, but bigger.",
             price: 8,
-            photo: ""
+            photo: "images/kyle-brinker-uAOQvpSI6MY-unsplash.jpg"
         },     
     ],
     desserts: [
@@ -109,7 +109,7 @@ const menu = {
             isVegan: false,
             description: "There's always room for ice cream",
             price: 4,
-            photo: ""
+            photo: "images/dovile-ramoskaite-iT4qcNMhYTQ-unsplash.jpg"
         },
         {
             name: "Cheesecake",
@@ -117,7 +117,7 @@ const menu = {
             isVegan: false,
             description: "There's always room for cheesecake",
             price: 5,
-            photo: ""
+            photo: "images/tina-guina-s8_7AqkzCWY-unsplash.jpg"
 
         },
         {
@@ -126,7 +126,7 @@ const menu = {
             isVegan: false,
             description: "There's always room for fancy cake",
             price: 6,
-            photo: ""
+            photo: "images/tanya-prodan-XTI0pEqQ8DI-unsplash.jpg"
 
         }
     ]
