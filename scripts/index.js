@@ -29,7 +29,9 @@ function getMenuObjsOnClick(event) {
     jsMainContent.textContent = "";
     let name = event.target.textContent;
     let itemObjs = categoryToItemObjs(name);
-    if (onlyVegetarian === true) {
+    if (onlyVegan === true) {
+        itemObjs = itemObjs.filter(filterVegan);
+    } else if (onlyVegetarian === true) {
         itemObjs = itemObjs.filter(filterVegetarian);
     }
     // debugger;
@@ -82,12 +84,34 @@ function isVegetarian() {
     if (onlyVegetarian === false) {
         onlyVegetarian = true;
         vegetarianButton.textContent = "Vegetarian!";
+        jsMainContent.textContent = "";
     } else {
         onlyVegetarian = false;
         vegetarianButton.textContent = "Not Vegetarian!";
+        jsMainContent.textContent = "";
     }
 }
 
 function filterVegetarian(itemObj) {
     return itemObj.isVegetarian;
+}
+
+const veganButton = document.querySelector(".js-vegan");
+veganButton.addEventListener("click", isVegan);
+let onlyVegan = false;
+
+function isVegan() {
+    if (onlyVegan === false) {
+        onlyVegan = true;
+        veganButton.textContent = "Vegan!";
+        jsMainContent.textContent = "";
+    } else {
+        onlyVegan = false;
+        veganButton.textContent = "Not Vegan!";
+        jsMainContent.textContent = "";
+    }
+}
+
+function filterVegan(itemObj) {
+    return itemObj.isVegan;
 }
